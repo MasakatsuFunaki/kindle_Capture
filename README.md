@@ -6,7 +6,7 @@ for PC book and screenshots each one.
 For personal use only — books you own. Don't redistribute the captures;
 Kindle DRM exists for a reason.
 
-**Latest release: [v0.0.1](https://github.com/MasakatsuFunaki/kindle_Capture/releases/tag/v0.0.1)** —
+**Latest release: [v0.0.2](https://github.com/MasakatsuFunaki/kindle_Capture/releases/tag/v0.0.2)** —
 all releases under [tags](https://github.com/MasakatsuFunaki/kindle_Capture/tags).
 
 ## Files
