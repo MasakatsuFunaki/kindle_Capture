@@ -1,0 +1,36 @@
+{
+  // Substring matched (case-insensitive) against Kindle's window title bar.
+  // Make this more specific (e.g. "Timofte's Kindle") if other Kindle-related
+  // windows are open.  Values: any non-empty string.
+  "window_title": "Kindle for PC",
+
+  // Maximum number of pages to capture (= max Right-Arrow presses).  Safe to
+  // over-estimate: the duplicate-page detector auto-stops at the real end.
+  // Values: positive integer.
+  "total_pages": 1000,
+
+  // Where captured PNGs land.  A subfolder named after the book is created
+  // beneath this.  Use double backslashes on Windows.
+  // Values: any absolute or relative path.
+  "out_dir": "D:\\kindle_Capture\\output",
+
+  // Seconds between flipping a page and capturing the next one.  Increase if
+  // Kindle's renders slowly or you see early duplicate-page warnings.
+  // Values: float >= 0 (typical 0.2 – 1.5).
+  "page_delay": 0.8,
+
+  // Pixels stripped from the top/bottom of every captured frame to remove
+  // Kindle's toolbar and footer chrome.
+  // Values: non-negative integers; top + bottom must be < window height.
+  "crop": {
+    "top": 60,
+    "bottom": 40
+  },
+
+  // Page-numbering direction.
+  //   "norm" — page_0001 is the first captured screen (default; LTR books)
+  //   "rev"  — page_0001 is the LAST captured screen (Japanese manga / RTL).
+  //            Reversed at the end of the run via a temp-prefix two-pass
+  //            rename, so file order matches reading order when sorted.
+  "direction": "norm"
+}

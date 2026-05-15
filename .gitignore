@@ -1,0 +1,7 @@
+config.json
+*.log
+build_dist/
+output/
+src/
+__pycache__/
+*.pyc
